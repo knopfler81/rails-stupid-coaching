@@ -1,9 +1,10 @@
 class CoachingControllerController < ApplicationController
   def ask
-    @question = params[:ask]
   end
 
   def answer
-    @question = params[:ask]
+    @question = params[:question]
+    @answer   = params[:answer]
   end
+
 end
